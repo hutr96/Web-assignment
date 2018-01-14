@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="js.js"></script>
+    <title>Register</title>
+</head>
+
+<body onload="disablesubmit()" onkeydown="check()">
+
+<!--表单-->
+<form name="form1" action="" method="post" onsubmit="return submitcheck();" onreset="return reset1()" action="register.php">
+    <fieldset>
+        <legend>Register information:</legend>
+        First name: <input type="text" name="firstname"><br>
+        Last name: <input type="text" name="lastname"><br>
+        Username: <input type="text" name="username"><br>
+        Password: <input type="password" name="password"><br>
+        Sex: <br>
+        <input type="radio" name="sex" value="male">Male<br>
+        <input type="radio" name="sex" value="female">Female<br>
+        Major:
+        <select name="major">
+            <option value="tx">通信工程</option>
+            <option value="xx">信息工程</option>
+            <option value="dx">电子信息工程</option>
+            <option value="else">其他</option>
+        </select><br>
+
+    </fieldset>
+    <fieldset>
+        <legend>Personal information:</legend>
+
+        Address:<input type="text" name="address" size="60"><br>
+        Zip code:<input type="number" name="zipcode" maxlength="6"><br>
+        Your email adress:<input type="email" name="email"><br>
+        Your telephone:<input type="tel" name="telephone" maxlength="11"><br>
+        <!--<textarea maxlength="6"></textarea>-->
+        <!--Biography:<br>-->
+        <!--<textarea name="cv" rows="10" cols="60">-->
+    <!--</textarea><br>-->
+    </fieldset>
+    <input class="submit" type="submit" value="Submit" id="sbm" name="btm">
+    <input class="submit" type="reset"  value="Reset All" name="btm">
+
+</form>
+</body>
+</html>

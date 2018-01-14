@@ -1,0 +1,178 @@
+/*General Setting*/
+
+body
+{
+    background: white;
+/*url("image/久美子.gif") no-repeat top right*/
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.text
+{
+    text-indent:100px;
+    color:brown;
+    word-spacing:10px;
+    text-shadow: black;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-style:italic;
+    font-size: 25px;
+    cursor:progress;
+}
+
+h1
+{
+    color:black;
+    font-size: 35px;
+}
+
+.left
+{
+    width: 25%;
+    float: left;
+}
+.right
+{
+    width: 70%;
+    float: right;
+}
+/*General Setting End*/
+/*a:link {color:#000000;  text-decoration: none;}*/
+/*a:visited {color:#00FF00; text-decoration: none; font-style: italic;}*/
+/*a:hover {color:#FF00FF; text-decoration: underline;}*/
+/*a:active {color:#0000FF; text-decoration: underline;*/
+    /*font-style: italic;}*/
+
+
+/*ul*/
+/*{*/
+    /*list-style-type:square;*/
+/*}*/
+
+/*Banner*/
+ul.banner
+{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+li.banner
+{
+    float: right;
+}
+li.banner a
+{
+    display: block;
+    color:  black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.banner a:hover {
+    background-color: antiquewhite;
+}
+li a.active
+{
+    background-color: navajowhite;
+}
+/*Banner End*/
+
+/*left card*/
+
+.card {
+    /*box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);*/
+    max-width: 300px;
+    margin: auto;
+    /*border: 2px solid black;*/
+    text-align: center;
+}
+.card img{
+    border-radius: 10px 10px 10px 10px;
+}
+.container {
+    padding: 3px 16px;
+}
+
+/*.container::after {*/
+    /*content: "";*/
+    /*clear: both;*/
+    /*display: table;*/
+/*}*/
+
+/*left card end*/
+
+
+#schedule
+{
+    font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+    width: 80%;
+    border-collapse:collapse;
+}
+#schedule td, #schedule th
+{
+    font-size: 25px;
+    border:1px solid saddlebrown;
+    padding: 5px;
+}
+#schedule th
+{
+    height: 50px;
+    font-size:1.1em;
+    text-align:center;
+    padding-top:5px;
+    padding-bottom:4px;
+    background-color:mediumseagreen;
+    color:white;
+}
+#schedule tr.alt td
+{
+    color:black;
+    background-color:cornflowerblue;
+}
+
+div.img
+{
+    width: 400px;
+    margin: 5px;
+    border: 2px solid white;
+    float: left;
+}
+div.img:hover
+{
+    border: 2px solid navajowhite;
+}
+
+div.desc
+{
+    font-size:20px;
+    cursor:s-resize; /*改变光标*/
+    padding: 5px;
+    text-align: center;
+}
+div.img2
+{
+    position:absolute;
+    left:520px;
+    top:500px;
+    z-index:-1;
+    opacity:0.4;
+}
+fieldset
+{
+    width: 50%;
+    position: relative;
+    left: 200px;
+    top: 100px;
+}
+
+input.submit
+{
+    position: relative;
+    left: 200px;
+    top: 100px;
+}
