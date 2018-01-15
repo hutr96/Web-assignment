@@ -1,5 +1,5 @@
 <?php
-
+//录入成绩
 if(isset($_POST["submit"])) {
     $class = $_POST["classname"];
     $grade = $_POST["grade"];

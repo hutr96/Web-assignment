@@ -1,4 +1,4 @@
-<?php
+<?php //成绩查询
 error_reporting( E_ALL&~E_NOTICE );
 if(isset($_POST["submit"])) {
     $class = $_POST["classname"];

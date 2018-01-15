@@ -35,7 +35,12 @@ if(!isset($_SESSION["username"])){
         </div>
     </div>
 </div>
+
+<!--导航栏 end-->
+
 <br><br><br>
+
+<!--成绩读取与输出-->
 <?php
 
 // 创建连接
@@ -58,6 +63,7 @@ if (mysqli_num_rows($result) > 0) {
 
 mysqli_close($conn);
 ?>
+<!--成绩读取与输出 end-->
 
 <?php //成绩查询
 if($_SESSION["username"]) {
@@ -74,7 +80,7 @@ if($_SESSION["username"]) {
 }
 ?>
 
-<?php //成绩录入
+<?php //成绩录入，仅管理员
 if($_SESSION["username"]=="hutr") {
     echo '
 <br>

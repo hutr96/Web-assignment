@@ -1,4 +1,4 @@
-<?php
+<?php //课程课表查询
 error_reporting( E_ALL&~E_NOTICE );
 if(isset($_POST["submit"])) {
     $classname = $_POST["classname"];
@@ -21,3 +21,5 @@ if(isset($_POST["submit"])) {
     }
 }
 ?>
+
+

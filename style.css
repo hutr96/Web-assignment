@@ -3,7 +3,6 @@
 body
 {
     background: white;
-/*url("image/久美子.gif") no-repeat top right*/
     font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
 }
 .text
@@ -34,20 +33,9 @@ h1
     width: 70%;
     float: right;
 }
-/*General Setting End*/
-/*a:link {color:#000000;  text-decoration: none;}*/
-/*a:visited {color:#00FF00; text-decoration: none; font-style: italic;}*/
-/*a:hover {color:#FF00FF; text-decoration: underline;}*/
-/*a:active {color:#0000FF; text-decoration: underline;*/
-    /*font-style: italic;}*/
+/*General Setting END*/
 
-
-/*ul*/
-/*{*/
-    /*list-style-type:square;*/
-/*}*/
-
-/*Banner*/
+/*导航栏部分样式*/
 ul.banner
 {
     position: fixed;
@@ -80,15 +68,14 @@ li a.active
 {
     background-color: navajowhite;
 }
-/*Banner End*/
+/*导航栏部分样式 END*/
 
-/*left card*/
+/*左侧 card*/
 
 .card {
-    /*box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);*/
+
     max-width: 300px;
     margin: auto;
-    /*border: 2px solid black;*/
     text-align: center;
 }
 .card img{
@@ -98,14 +85,8 @@ li a.active
     padding: 3px 16px;
 }
 
-/*.container::after {*/
-    /*content: "";*/
-    /*clear: both;*/
-    /*display: table;*/
-/*}*/
 
-/*left card end*/
-
+/*课表*/
 
 #schedule
 {
@@ -134,6 +115,9 @@ li a.active
     color:black;
     background-color:cornflowerblue;
 }
+
+
+/*活动图片*/
 
 div.img
 {

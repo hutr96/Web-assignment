@@ -36,6 +36,7 @@ if(!isset($_SESSION["username"])){
 </div>
 
 <br><br>
+
 <!--上传文件（仅管理员权限）-->
 <?php
 if($_SESSION["username"]=="hutr") {
@@ -62,14 +63,14 @@ if($d=opendir($dir)){
         if($f=="gif" or $f=="jpg" or $f=="png") {
             //文件过滤
             if (!is_dir('./'.$file)) {
-
+                //图片输出
                 echo "
                     <div class='img'>
                     <a target='_blank' href='image/$file'>
                         <img src='image/$file' alt='图片文本描述' width='400' height='225'>
                     </a>
                     </div>
-                    ";//输出图片数组
+                    ";
             }}
 
 

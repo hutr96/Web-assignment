@@ -35,8 +35,10 @@ exit;
 
     </div>
 </div>
-
+<!--导航栏 end-->
 <br><br>
+
+<!--从数据库中读取课表-->
 <?php
 $mon=array();
 $tue=array();
@@ -53,7 +55,6 @@ $result = mysqli_query($conn, $sql);
 if (mysqli_num_rows($result) > 0) {
     // 输出成绩
     while($row = mysqli_fetch_assoc($result)) {
-//        echo "week: " . $row["week"]. "   -- sect: " . $row["sect"]."  -- classname ".$row["classname"]. "<br>";
         //读取课表并分配，准备输出至表格
         if($row["week"]=="mon"){
             $mon[$row["sect"]-1]=$row["classname"];
@@ -74,7 +75,9 @@ if (mysqli_num_rows($result) > 0) {
 }
 
 ?>
-<!--课表表格-->
+<!--从数据库中读取课表 end-->
+
+<!--课表表格展示-->
 <h4>课程表:</h4>
 
 <table id='schedule'>
@@ -119,6 +122,7 @@ if (mysqli_num_rows($result) > 0) {
         <td align='center'><div><?php echo $fri[3]; ?></div></td>
     </tr>
 </table>
+<!--课表表格展示 end-->
 
 <?php //课表查询
 if($_SESSION["username"]) {
@@ -136,7 +140,7 @@ if($_SESSION["username"]) {
 ?>
 
 
-<?php
+<?php //课程输入，仅管理员
 if($_SESSION["username"]=="hutr") {
     echo '
 <div class="container">

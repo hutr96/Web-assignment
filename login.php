@@ -1,4 +1,5 @@
 <?php
+//登录
 if(isset($_POST["submit"]))
 {
     $user = $_POST["username"];
@@ -21,7 +22,7 @@ UNION ALL select username from guest where username = '$user' and password = '$p
         //检测用户名和密码
         $result = mysqli_query($conn,$sql);
         if(mysqli_num_rows($result) > 0){
-            //成果匹配
+            //匹配成功
             session_start();
             $_SESSION["username"] = $user;
             echo $user,' welcome<br />';
@@ -38,7 +39,6 @@ UNION ALL select username from guest where username = '$user' and password = '$p
 
     }
 }
-
 
 else
 {

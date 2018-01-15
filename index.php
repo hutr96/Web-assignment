@@ -41,12 +41,15 @@ session_start();
 
 <!--导航栏目录 END-->
 
-
+<!--主界面-->
 
 <div style="width: 80%;margin-left: 10%;">
 <br> <br> <br>
 
+<!--左侧信息与登录栏-->
 <div class="left">
+
+<!--    个人信息-->
     <div class="card">
         <img src="image/ETO.jpg" alt="HU" style="width:100%">
         <div class="container">
@@ -57,11 +60,13 @@ session_start();
         </div>
     </div>
     <br>
+    <!--    个人信息 end-->
 
+<!--    登录与注册-->
     <?php if(!isset($_SESSION["username"])){
         echo '
     <div class="card">
-    <!--<img src="image/ETO.jpg" alt="HU" style="width:100%">-->
+
         <div class="container">
         <form action="login.php" method="post">
         Username: <input type="text" name="username"><br>
@@ -71,8 +76,6 @@ session_start();
             <p style="opacity: 0.5;">No Account? Click here to register</p></a>
     
 
-        <!--<p><button>Contact</button></p>-->
-            
         </form>
         </div>
         </div>
@@ -86,9 +89,12 @@ session_start();
         </div>
         ';
     }?>
+<!--    登录与注册 end-->
 
 </div>
+<!--左侧信息与登录栏 end-->
 
+<!--    右侧介绍信息栏-->
 <div class="right">
     <h1 style="text-align:center">Welcome to HUTR's website</h1>
     <h1 style="text-align:center">欢迎来到胡天睿的网站</h1>
@@ -100,7 +106,7 @@ session_start();
     My research interest lies in artificial intelligence (AI) and human-computer interaction (HCI).
 
 </div>
-
+<!--    右侧介绍信息栏 end-->
 </div>
 </body>
 </html>

@@ -2,7 +2,7 @@ function disablesubmit(){
     document.getElementById("sbm").disabled = true;
 }
 function check(){
-//            alert("checking")
+//   检查是否填写完成，若填写完成，则将submit按钮变为可用状态
     var input = document.getElementsByTagName("input");
     var sex = document.getElementsByName("sex");
     var checked = true;
@@ -22,6 +22,7 @@ function check(){
     if(checked===true&&sexcheck===true) document.getElementById("sbm").disabled = false;
 }
 function submitcheck() {
+    //表单验证，验证是否填写正确
     var reg = /^[0-9]+$/;
     var zmnumReg=/^[0-9a-zA-Z]*$/;
     var emailreg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
@@ -62,9 +63,6 @@ function submitcheck() {
         alert('请输入有效的邮箱');
         return false;
     }
-    // if(document.forms["form1"].cv.value.replace(/(^[\s\t\xa0\u3000]+)|([\u3000\xa0\s\t]+$)/g, "")===""){
-    //     alert("个人简介不能为空"); return false;
-    // }
     if(document.forms["form1"].telephone.value.length===0||document.forms["form1"].telephone.value.length!==11||!reg.test(document.forms["form1"].telephone.value)) {
         alert("请输入正确的手机号" ); return false;
     }

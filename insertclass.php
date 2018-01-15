@@ -1,5 +1,5 @@
 <?php
-
+//录入课表
 if(isset($_POST["submit"])) {
     $week = $_POST["week"];
     $sect = $_POST["section"];
@@ -31,3 +31,5 @@ if(isset($_POST["submit"])) {
     }
 }
 ?>
+
+
