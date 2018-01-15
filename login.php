@@ -19,7 +19,8 @@ if(isset($_POST["submit"]))
         $sql = "select username from admin where username = '$user' and password = '$pwd' 
 UNION ALL select username from guest where username = '$user' and password = '$pwd'";
         //检测用户名和密码
-        if($result = mysqli_query($conn,$sql)){
+        $result = mysqli_query($conn,$sql);
+        if(mysqli_num_rows($result) > 0){
             //成果匹配
             session_start();
             $_SESSION["username"] = $user;
@@ -27,6 +28,10 @@ UNION ALL select username from guest where username = '$user' and password = '$p
             echo '<a href="index.php">返回主界面</a>';
             echo '点击此处 <a href="logout.php?action=logout">注销</a> 登录！<br />';
             exit;
+        }
+        else{
+            echo '错误<br />';
+            echo '<a href="index.php">返回主界面</a>';
         }
 
         mysqli_close($conn);

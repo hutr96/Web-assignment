@@ -27,9 +27,9 @@ if(!isset($_SESSION["username"])){
             <ul class="banner" >
                 <li style="float:left" class="banner"><a href="index.php">Home</a></li>
                 <li class="banner"><a href="CV.pdf">CV</a></li>
-                <li class="banner"><a href="grade.php">Grades</a></li>
+                <li class="banner"><a class="active" href="grade.php">Grades</a></li>
                 <li class="banner"><a href="class-schedule.php">Class Schedule</a></li>
-                <li class="banner"><a class="active" href="activity.php">Activities</a></li>
+                <li class="banner"><a href="activity.php">Activities</a></li>
                 <li class="banner"><a href="self-introduction.html">Self-Introduction</a></li>
             </ul>
         </div>

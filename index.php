@@ -67,7 +67,7 @@ session_start();
         Username: <input type="text" name="username"><br>
         Password : <input type="password" name="password"><br>
         <input type="submit" name="submit" value="Login"/>
-        <a href="register.php">
+        <a href="regi.html">
             <p style="opacity: 0.5;">No Account? Click here to register</p></a>
     
 
@@ -99,17 +99,8 @@ session_start();
     Your program is the ideal first step for me to achieve this goal because your program offers opportunities for me to develop excellent academic knowledge and professional skills necessary for a career in computer science.
     My research interest lies in artificial intelligence (AI) and human-computer interaction (HCI).
 
-    <!--<a href="register.html">-->
-        <!--<p style="text-align: center">click here to register for following information</p></a>-->
-
-
 </div>
 
 </div>
-
-
-
-
-
 </body>
 </html>
